@@ -1,1 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+.white-bg {
+  background-color: #f5f5dc;
+}
+.rojo {
+  color: red;
+}

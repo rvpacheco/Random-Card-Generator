@@ -3,27 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Card Generator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
     <link rel="shortcut icon" href="./4geeks.ico" />
-  </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="card text-left white-bg" style="width: 64mm; height: 88mm;">
+      <div class="card-header white-bg">
+        <p class="rank-small mb-0 cartaAleatoria"></p>
+        <span class="suit-small pintaAleatoria"></span>
       </div>
+      <div class="card-body d-flex justify-content-center align-items-center flex-column white-bg">
+        <p class="suit-large display-1 pintaAleatoria"></p>
+      </div>
+      <div class="card-footer text-right white-bg">
+        <span class="suit-small transform-rotate-180 pintaAleatoria"></span>
+        <p class="rank-small mb-0 transform-rotate-180 cartaAleatoria"></p>
+      </div>
+    </div>
+
+    <div>
+      <button type="button" class="btn btn-success" onclick="location.reload()">random card</button>
     </div>
   </body>
 </html>
